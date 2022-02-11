@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on darwin)" generated="20220210 11:40:47.774" rpa="false" schemaversion="2">
+<suite id="s1" name="Hotel" source="/Users/andikaprananto/PycharmProjects/AladinOtomasi-Master/Test/Techo/Hotel.robot">
+<test id="s1-t1" name="TC001 Open MyHeadless Browser">
+<kw name="Open MyHeadless Keyword" library="Browsers">
+<msg timestamp="20220210 11:40:49.152" level="TRACE">Arguments: [  ]</msg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220210 11:40:49.154" level="TRACE">Arguments: [ "sys.modules['selenium.webdriver'].ChromeOptions()" | 'sys, selenium.webdriver' ]</msg>
+<msg timestamp="20220210 11:40:49.154" level="TRACE">Return: &lt;selenium.webdriver.chrome.options.Options object at 0x102b41a50&gt;</msg>
+<msg timestamp="20220210 11:40:49.155" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x102b41a50&gt;</msg>
+<status status="PASS" starttime="20220210 11:40:49.153" endtime="20220210 11:40:49.155"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20220210 11:40:49.156" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.options.Options object at 0x102b41a50&gt; | 'add_argument' | '--headless' ]</msg>
+<msg timestamp="20220210 11:40:49.156" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220210 11:40:49.156" endtime="20220210 11:40:49.156"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST_WEBDES}</arg>
+<arg>Headless Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220210 11:40:49.158" level="TRACE">Arguments: [ 'https://staging.misteralad.in/' | 'Headless Chrome' ]</msg>
+<msg timestamp="20220210 11:40:49.158" level="INFO">Opening browser 'Headless Chrome' to base url 'https://staging.misteralad.in/'.</msg>
+<msg timestamp="20220210 11:40:49.701" level="DEBUG">POST http://localhost:58085/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}</msg>
+<msg timestamp="20220210 11:40:49.702" level="DEBUG">Starting new HTTP connection (1): localhost:58085</msg>
+<msg timestamp="20220210 11:40:50.880" level="DEBUG">http://localhost:58085 "POST /session HTTP/1.1" 200 798</msg>
+<msg timestamp="20220210 11:40:50.881" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220210 11:40:50.881" level="DEBUG">POST http://localhost:58085/session/dda76236d14f685e54cbe7cf97282145/timeouts {"script": 5000}</msg>
+<msg timestamp="20220210 11:40:50.882" level="DEBUG">http://localhost:58085 "POST /session/dda76236d14f685e54cbe7cf97282145/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20220210 11:40:50.882" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220210 11:40:50.882" level="DEBUG">POST http://localhost:58085/session/dda76236d14f685e54cbe7cf97282145/timeouts {"implicit": 0}</msg>
+<msg timestamp="20220210 11:40:50.884" level="DEBUG">http://localhost:58085 "POST /session/dda76236d14f685e54cbe7cf97282145/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20220210 11:40:50.884" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220210 11:40:50.884" level="DEBUG">POST http://localhost:58085/session/dda76236d14f685e54cbe7cf97282145/url {"url": "https://staging.misteralad.in/"}</msg>
+<msg timestamp="20220210 11:40:54.946" level="DEBUG">http://localhost:58085 "POST /session/dda76236d14f685e54cbe7cf97282145/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20220210 11:40:54.947" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220210 11:40:54.947" level="DEBUG">Opened browser with session id dda76236d14f685e54cbe7cf97282145.</msg>
+<msg timestamp="20220210 11:40:54.947" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220210 11:40:49.157" endtime="20220210 11:40:54.947"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20220210 11:40:54.948" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220210 11:40:54.948" level="DEBUG">POST http://localhost:58085/session/dda76236d14f685e54cbe7cf97282145/window/maximize {}</msg>
+<msg timestamp="20220210 11:40:55.059" level="DEBUG">http://localhost:58085 "POST /session/dda76236d14f685e54cbe7cf97282145/window/maximize HTTP/1.1" 200 50</msg>
+<msg timestamp="20220210 11:40:55.060" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220210 11:40:55.060" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220210 11:40:54.948" endtime="20220210 11:40:55.060"/>
+</kw>
+<msg timestamp="20220210 11:40:55.061" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220210 11:40:49.151" endtime="20220210 11:40:55.061"/>
+</kw>
+<doc>Open MyHeadless Browser</doc>
+<tag>Regression</tag>
+<status status="PASS" starttime="20220210 11:40:49.149" endtime="20220210 11:40:55.062"/>
+</test>
+<test id="s1-t2" name="TC002 Click Techo Hotel Now">
+<kw name="Click Techo Hotel Now" library="CommonKey">
+<msg timestamp="20220210 11:40:55.075" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Element Is Visible">
+<arg>${allow_permission}</arg>
+<msg timestamp="20220210 11:40:55.079" level="FAIL">Multiple keywords with name 'Wait Until Element Is Visible' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Wait Until Element Is Visible
+    SeleniumLibrary.Wait Until Element Is Visible</msg>
+<status status="FAIL" starttime="20220210 11:40:55.078" endtime="20220210 11:40:55.079"/>
+</kw>
+<kw name="Click Element">
+<arg>${allow_permission}</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.081" endtime="20220210 11:40:55.082"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>${field_techo_hotel}</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.082" endtime="20220210 11:40:55.082"/>
+</kw>
+<kw name="Click Element">
+<arg>${field_techo_hotel}</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.083" endtime="20220210 11:40:55.083"/>
+</kw>
+<status status="FAIL" starttime="20220210 11:40:55.074" endtime="20220210 11:40:55.084"/>
+</kw>
+<doc>Open Tab Techo Hotel From Web</doc>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20220210 11:40:55.070" endtime="20220210 11:40:55.085">Multiple keywords with name 'Wait Until Element Is Visible' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Wait Until Element Is Visible
+    SeleniumLibrary.Wait Until Element Is Visible</status>
+</test>
+<test id="s1-t3" name="TC003 Input Search Hotel By Name">
+<kw name="Input Search Hotel By Name" library="SearchHotelByName">
+<arg>${byNameHotel}</arg>
+<msg timestamp="20220210 11:40:55.092" level="TRACE">Arguments: [ ${byNameHotel}='Roemahkoe Heritage Hotel Boutique' ]</msg>
+<kw name="Input Text">
+<arg>xpath=//input[@id='input-hotel-search']</arg>
+<arg>${byNameHotel}</arg>
+<msg timestamp="20220210 11:40:55.093" level="FAIL">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Input Text
+    SeleniumLibrary.Input Text</msg>
+<status status="FAIL" starttime="20220210 11:40:55.093" endtime="20220210 11:40:55.093"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>css=.item-text-title</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.095" endtime="20220210 11:40:55.097"/>
+</kw>
+<kw name="Click Element">
+<arg>css=.item-text-title</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.098" endtime="20220210 11:40:55.099"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//*[@id="input-start-date-hotel"]</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.100" endtime="20220210 11:40:55.100"/>
+</kw>
+<status status="FAIL" starttime="20220210 11:40:55.091" endtime="20220210 11:40:55.103"/>
+</kw>
+<kw name="Click Date CheckIn" library="SearchHotelByName">
+<arg>${datcheckin}</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.104" endtime="20220210 11:40:55.104"/>
+</kw>
+<kw name="Click Date CheckOut" library="SearchHotelByName">
+<arg>${dataCheckOut}</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.105" endtime="20220210 11:40:55.105"/>
+</kw>
+<kw name="Input Jumlah Kamar &amp; Tamu" library="SearchHotelByName">
+<status status="NOT RUN" starttime="20220210 11:40:55.106" endtime="20220210 11:40:55.106"/>
+</kw>
+<status status="FAIL" starttime="20220210 11:40:55.087" endtime="20220210 11:40:55.107">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Input Text
+    SeleniumLibrary.Input Text</status>
+</test>
+<test id="s1-t4" name="TC004 Product Detail Page Hotel by Name">
+<kw name="Product Detail Page Hotel by Name" library="SearchHotelByName">
+<msg timestamp="20220210 11:40:55.116" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Element Is Visible">
+<arg>xpath=//h2[contains(text(),'${byNameHotel}')]</arg>
+<msg timestamp="20220210 11:40:55.118" level="FAIL">Multiple keywords with name 'Wait Until Element Is Visible' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Wait Until Element Is Visible
+    SeleniumLibrary.Wait Until Element Is Visible</msg>
+<status status="FAIL" starttime="20220210 11:40:55.118" endtime="20220210 11:40:55.118"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//a[@class='btn-open-map']</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.120" endtime="20220210 11:40:55.121"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>xpath=//img[@src='/img/close.svg']</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.121" endtime="20220210 11:40:55.121"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//img[@src='/img/close.svg']</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.122" endtime="20220210 11:40:55.122"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//a[@class='btn-show-more']</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.122" endtime="20220210 11:40:55.123"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//i[@class='fa fa-close']</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.123" endtime="20220210 11:40:55.123"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>xpath=//button[@class='btn btn-login']</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.123" endtime="20220210 11:40:55.126"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-login']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.130" endtime="20220210 11:40:55.130"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Fasilitas Hotel</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.130" endtime="20220210 11:40:55.130"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Wifi</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.131" endtime="20220210 11:40:55.131"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Kolam Renang</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.133" endtime="20220210 11:40:55.133"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Layanan Kamar</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.133" endtime="20220210 11:40:55.133"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Restoran</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.135" endtime="20220210 11:40:55.135"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Area Parkir</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.136" endtime="20220210 11:40:55.136"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Lift</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.136" endtime="20220210 11:40:55.137"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Spa &amp; Pusat Kebugaran</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.137" endtime="20220210 11:40:55.137"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//h3[contains(text(),'Deluxe')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.137" endtime="20220210 11:40:55.138"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Deluxe</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.138" endtime="20220210 11:40:55.138"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//*/text()[normalize-space(.)='Pilih']/parent::*</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.138" endtime="20220210 11:40:55.138"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*/text()[normalize-space(.)='Lihat Detail']/parent::*</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.139" endtime="20220210 11:40:55.139"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Harga 1 Kamar/Malam</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.139" endtime="20220210 11:40:55.139"/>
+</kw>
+<kw name="Should Be String" library="String">
+<arg>IDR 180.000</arg>
+<doc>Fails if the given ``item`` is not a string.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.140" endtime="20220210 11:40:55.140"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Jumlah Kamar</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.140" endtime="20220210 11:40:55.140"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.140" endtime="20220210 11:40:55.140"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Jumlah Malam</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.141" endtime="20220210 11:40:55.141"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.142" endtime="20220210 11:40:55.145"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//*/text()[normalize-space(.)='Kebijakan Anak']/parent::*</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.146" endtime="20220210 11:40:55.146"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath=//*/text()[normalize-space(.)='Fasilitas']/parent::*</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.146" endtime="20220210 11:40:55.147"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//*/text()[normalize-space(.)='Fasilitas']/parent::*</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.147" endtime="20220210 11:40:55.147"/>
+</kw>
+<kw name="Should Be String" library="String">
+<arg>12.0 m2</arg>
+<doc>Fails if the given ``item`` is not a string.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.151" endtime="20220210 11:40:55.151"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//*/text()[normalize-space(.)='Tentang Kamar']/parent::*</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.151" endtime="20220210 11:40:55.151"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>css=i.fa.fa-close</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220210 11:40:55.151" endtime="20220210 11:40:55.151"/>
+</kw>
+<kw name="Click Element">
+<arg>css=i.fa.fa-close</arg>
+<status status="NOT RUN" starttime="20220210 11:40:55.152" endtime="20220210 11:40:55.152"/>
+</kw>
+<status status="FAIL" starttime="20220210 11:40:55.115" endtime="20220210 11:40:55.152"/>
+</kw>
+<kw name="Click Fasilitas Product Detail Page Hotel by Name" library="SearchHotelByName">
+<status status="NOT RUN" starttime="20220210 11:40:55.153" endtime="20220210 11:40:55.153"/>
+</kw>
+<status status="FAIL" starttime="20220210 11:40:55.110" endtime="20220210 11:40:55.154">Multiple keywords with name 'Wait Until Element Is Visible' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Wait Until Element Is Visible
+    SeleniumLibrary.Wait Until Element Is Visible</status>
+</test>
+<doc>Regression Techo Hotel Page Aladin</doc>
+<status status="FAIL" starttime="20220210 11:40:47.781" endtime="20220210 11:40:55.156"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="1" skip="0">Regression</stat>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="Hotel">Hotel</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
