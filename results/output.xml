@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.0 on darwin)" generated="20220211 14:16:30.109" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.0 on darwin)" generated="20220213 21:10:03.932" rpa="false" schemaversion="2">
 <suite id="s1" name="Login" source="/Users/andikaprananto/PycharmProjects/AladinOtomasi-Master/Test/Security/Mobile/Login.robot">
 <test id="s1-t1" name="TC001 When Setup and open dialer Android App">
 <kw name="Setup and open dialer Android App" library="MobileSetUp">
@@ -19,79 +19,79 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<msg timestamp="20220211 14:16:45.452" level="INFO">${androiddriver} = 1</msg>
-<status status="PASS" starttime="20220211 14:16:31.103" endtime="20220211 14:16:45.453"/>
+<msg timestamp="20220213 21:10:13.389" level="INFO">${androiddriver} = 1</msg>
+<status status="PASS" starttime="20220213 21:10:04.882" endtime="20220213 21:10:13.389"/>
 </kw>
-<status status="PASS" starttime="20220211 14:16:31.102" endtime="20220211 14:16:45.453"/>
+<status status="PASS" starttime="20220213 21:10:04.882" endtime="20220213 21:10:13.389"/>
 </kw>
 <kw name="Allow PermissionController Android App" library="MobileSetUp">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>com.android.permissioncontroller:id/permission_allow_one_time_button</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220211 14:16:45.454" endtime="20220211 14:16:49.232"/>
+<status status="PASS" starttime="20220213 21:10:13.390" endtime="20220213 21:10:17.130"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.android.permissioncontroller:id/permission_allow_one_time_button</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:16:49.240" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_one_time_button'.</msg>
-<status status="PASS" starttime="20220211 14:16:49.232" endtime="20220211 14:16:49.365"/>
+<msg timestamp="20220213 21:10:17.133" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_one_time_button'.</msg>
+<status status="PASS" starttime="20220213 21:10:17.130" endtime="20220213 21:10:17.255"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.android.permissioncontroller:id/permission_allow_one_time_button</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:16:49.377" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_one_time_button'.</msg>
-<status status="PASS" starttime="20220211 14:16:49.366" endtime="20220211 14:16:50.157"/>
+<msg timestamp="20220213 21:10:17.260" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_one_time_button'.</msg>
+<status status="PASS" starttime="20220213 21:10:17.256" endtime="20220213 21:10:17.987"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.android.permissioncontroller:id/permission_allow_button</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:16:50.165" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_button'.</msg>
-<status status="PASS" starttime="20220211 14:16:50.158" endtime="20220211 14:16:50.891"/>
+<msg timestamp="20220213 21:10:17.992" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20220213 21:10:17.988" endtime="20220213 21:10:18.726"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.android.permissioncontroller:id/permission_allow_button</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:16:50.904" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_button'.</msg>
-<status status="PASS" starttime="20220211 14:16:50.892" endtime="20220211 14:16:51.680"/>
+<msg timestamp="20220213 21:10:18.734" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20220213 21:10:18.728" endtime="20220213 21:10:19.480"/>
 </kw>
-<status status="PASS" starttime="20220211 14:16:45.453" endtime="20220211 14:16:51.681"/>
+<status status="PASS" starttime="20220213 21:10:13.390" endtime="20220213 21:10:19.481"/>
 </kw>
 <doc>Open application and allow permission apps</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:16:31.101" endtime="20220211 14:16:51.682"/>
+<status status="PASS" starttime="20220213 21:10:04.881" endtime="20220213 21:10:19.481"/>
 </test>
 <test id="s1-t2" name="TC002 Click Skip Or Login and Click My Profile">
 <kw name="Button Skip and Login" library="LoginEmail">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${btn_Skip}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220211 14:16:51.689" endtime="20220211 14:16:52.444"/>
+<status status="PASS" starttime="20220213 21:10:19.484" endtime="20220213 21:10:20.243"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${btn_Skip}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:16:52.453" level="INFO">Clicking element 'com.misteraladin.android.stag:id/relSkip'.</msg>
-<status status="PASS" starttime="20220211 14:16:52.445" endtime="20220211 14:16:52.676"/>
+<msg timestamp="20220213 21:10:20.247" level="INFO">Clicking element 'com.misteraladin.android.stag:id/relSkip'.</msg>
+<status status="PASS" starttime="20220213 21:10:20.243" endtime="20220213 21:10:20.469"/>
 </kw>
-<status status="PASS" starttime="20220211 14:16:51.687" endtime="20220211 14:16:52.676"/>
+<status status="PASS" starttime="20220213 21:10:19.484" endtime="20220213 21:10:20.469"/>
 </kw>
 <kw name="Click Button My Profile" library="LoginEmail">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${btn_myprofile}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220211 14:16:52.678" endtime="20220211 14:16:56.445"/>
+<status status="PASS" starttime="20220213 21:10:20.471" endtime="20220213 21:10:24.655"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${btn_myprofile}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:16:56.453" level="INFO">Clicking element 'com.misteraladin.android.stag:id/navigation_my_profile'.</msg>
-<status status="PASS" starttime="20220211 14:16:56.445" endtime="20220211 14:16:56.777"/>
+<msg timestamp="20220213 21:10:24.661" level="INFO">Clicking element 'com.misteraladin.android.stag:id/navigation_my_profile'.</msg>
+<status status="PASS" starttime="20220213 21:10:24.656" endtime="20220213 21:10:25.060"/>
 </kw>
-<status status="PASS" starttime="20220211 14:16:52.677" endtime="20220211 14:16:56.777"/>
+<status status="PASS" starttime="20220213 21:10:20.470" endtime="20220213 21:10:25.060"/>
 </kw>
 <doc>Click Skip Or Login and Click My Profile</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:16:51.685" endtime="20220211 14:16:56.778"/>
+<status status="PASS" starttime="20220213 21:10:19.482" endtime="20220213 21:10:25.061"/>
 </test>
 <test id="s1-t3" name="TC003 Input Email Not Input Password">
 <kw name="Generate Random String" library="String">
@@ -99,65 +99,65 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>10</arg>
 <arg>0123456789</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<msg timestamp="20220211 14:16:56.782" level="INFO">${RANDOM_NUMBER} = 5870091852</msg>
-<status status="PASS" starttime="20220211 14:16:56.780" endtime="20220211 14:16:56.782"/>
+<msg timestamp="20220213 21:10:25.065" level="INFO">${RANDOM_NUMBER} = 9852267168</msg>
+<status status="PASS" starttime="20220213 21:10:25.064" endtime="20220213 21:10:25.065"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${input_email}</var>
 <arg>aladin+${RANDOM_NUMBER}@mnc.tv</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20220211 14:16:56.785" level="INFO">${input_email} = aladin+5870091852@mnc.tv</msg>
-<status status="PASS" starttime="20220211 14:16:56.783" endtime="20220211 14:16:56.785"/>
+<msg timestamp="20220213 21:10:25.067" level="INFO">${input_email} = aladin+9852267168@mnc.tv</msg>
+<status status="PASS" starttime="20220213 21:10:25.066" endtime="20220213 21:10:25.067"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${input_email}</var>
 <arg>mister+${RANDOM_NUMBER}@aladin.com</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20220211 14:16:56.788" level="INFO">${input_email} = mister+5870091852@aladin.com</msg>
-<status status="PASS" starttime="20220211 14:16:56.786" endtime="20220211 14:16:56.788"/>
+<msg timestamp="20220213 21:10:25.069" level="INFO">${input_email} = mister+9852267168@aladin.com</msg>
+<status status="PASS" starttime="20220213 21:10:25.067" endtime="20220213 21:10:25.069"/>
 </kw>
 <kw name="Input Email Not Input Password" library="LoginEmail">
 <arg>${input_email}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/txtTitle</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220211 14:16:56.791" endtime="20220211 14:16:58.414"/>
+<status status="PASS" starttime="20220213 21:10:25.075" endtime="20220213 21:10:26.649"/>
 </kw>
 <kw name="Page Should Contain Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/txtTitle</arg>
 <doc>Verifies that current page contains `locator` element.</doc>
-<msg timestamp="20220211 14:16:58.585" level="INFO">Current page contains element 'com.misteraladin.android.stag:id/txtTitle'.</msg>
-<status status="PASS" starttime="20220211 14:16:58.414" endtime="20220211 14:16:58.585"/>
+<msg timestamp="20220213 21:10:26.795" level="INFO">Current page contains element 'com.misteraladin.android.stag:id/txtTitle'.</msg>
+<status status="PASS" starttime="20220213 21:10:26.649" endtime="20220213 21:10:26.795"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <arg>${input_email}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:16:58.613" level="INFO">Typing text 'mister+5870091852@aladin.com' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:16:58.586" endtime="20220211 14:16:59.562"/>
+<msg timestamp="20220213 21:10:26.799" level="INFO">Typing text 'mister+9852267168@aladin.com' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:26.795" endtime="20220213 21:10:27.631"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/btnSignIn</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:16:59.566" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
-<status status="PASS" starttime="20220211 14:16:59.562" endtime="20220211 14:17:00.858"/>
+<msg timestamp="20220213 21:10:27.638" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
+<status status="PASS" starttime="20220213 21:10:27.632" endtime="20220213 21:10:28.282"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220211 14:17:01.348" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220211 14:17:00.859" endtime="20220211 14:17:01.348"/>
+<msg timestamp="20220213 21:10:28.766" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220213 21:10:28.283" endtime="20220213 21:10:28.767"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:01.353" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:17:01.348" endtime="20220211 14:17:01.714"/>
+<msg timestamp="20220213 21:10:28.772" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:28.767" endtime="20220213 21:10:28.962"/>
 </kw>
-<status status="PASS" starttime="20220211 14:16:56.788" endtime="20220211 14:17:01.715"/>
+<status status="PASS" starttime="20220213 21:10:25.070" endtime="20220213 21:10:28.963"/>
 </kw>
 <doc>Input Email Not Input Password</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:16:56.779" endtime="20220211 14:17:01.715"/>
+<status status="PASS" starttime="20220213 21:10:25.062" endtime="20220213 21:10:28.963"/>
 </test>
 <test id="s1-t4" name="TC003 Input Password not Input Email">
 <kw name="Generate Random String" library="String">
@@ -165,84 +165,84 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>3</arg>
 <arg>0123456789</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<msg timestamp="20220211 14:17:01.717" level="INFO">${RANDOM_NUMBER} = 132</msg>
-<status status="PASS" starttime="20220211 14:17:01.717" endtime="20220211 14:17:01.717"/>
+<msg timestamp="20220213 21:10:28.966" level="INFO">${RANDOM_NUMBER} = 782</msg>
+<status status="PASS" starttime="20220213 21:10:28.965" endtime="20220213 21:10:28.966"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${input_password}</var>
 <arg>MisterAladin_${RANDOM_NUMBER}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20220211 14:17:01.718" level="INFO">${input_password} = MisterAladin_132</msg>
-<status status="PASS" starttime="20220211 14:17:01.717" endtime="20220211 14:17:01.718"/>
+<msg timestamp="20220213 21:10:28.967" level="INFO">${input_password} = MisterAladin_782</msg>
+<status status="PASS" starttime="20220213 21:10:28.967" endtime="20220213 21:10:28.967"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${input_password}</var>
 <arg>MisterAladin_${RANDOM_NUMBER}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20220211 14:17:01.718" level="INFO">${input_password} = MisterAladin_132</msg>
-<status status="PASS" starttime="20220211 14:17:01.718" endtime="20220211 14:17:01.718"/>
+<msg timestamp="20220213 21:10:28.968" level="INFO">${input_password} = MisterAladin_782</msg>
+<status status="PASS" starttime="20220213 21:10:28.968" endtime="20220213 21:10:28.969"/>
 </kw>
 <kw name="Input Password not Input Email" library="LoginEmail">
 <arg>${input_password}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/txtTitle</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220211 14:17:01.719" endtime="20220211 14:17:02.309"/>
+<status status="PASS" starttime="20220213 21:10:28.970" endtime="20220213 21:10:29.646"/>
 </kw>
 <kw name="Page Should Contain Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/txtTitle</arg>
 <doc>Verifies that current page contains `locator` element.</doc>
-<msg timestamp="20220211 14:17:02.405" level="INFO">Current page contains element 'com.misteraladin.android.stag:id/txtTitle'.</msg>
-<status status="PASS" starttime="20220211 14:17:02.309" endtime="20220211 14:17:02.405"/>
+<msg timestamp="20220213 21:10:29.805" level="INFO">Current page contains element 'com.misteraladin.android.stag:id/txtTitle'.</msg>
+<status status="PASS" starttime="20220213 21:10:29.646" endtime="20220213 21:10:29.805"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <arg>${input_password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:02.411" level="INFO">Typing text 'MisterAladin_132' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:02.405" endtime="20220211 14:17:03.041"/>
+<msg timestamp="20220213 21:10:29.808" level="INFO">Typing text 'MisterAladin_782' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:29.805" endtime="20220213 21:10:30.445"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/btnSignIn</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:03.047" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
-<status status="PASS" starttime="20220211 14:17:03.042" endtime="20220211 14:17:03.701"/>
+<msg timestamp="20220213 21:10:30.451" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
+<status status="PASS" starttime="20220213 21:10:30.445" endtime="20220213 21:10:31.245"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220211 14:17:04.407" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220211 14:17:03.701" endtime="20220211 14:17:04.407"/>
+<msg timestamp="20220213 21:10:31.690" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220213 21:10:31.245" endtime="20220213 21:10:31.690"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:04.410" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:04.408" endtime="20220211 14:17:04.556"/>
+<msg timestamp="20220213 21:10:31.694" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:31.690" endtime="20220213 21:10:31.913"/>
 </kw>
-<status status="PASS" starttime="20220211 14:17:01.718" endtime="20220211 14:17:04.557"/>
+<status status="PASS" starttime="20220213 21:10:28.969" endtime="20220213 21:10:31.913"/>
 </kw>
 <doc>Input Password not Input Email</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:17:01.716" endtime="20220211 14:17:04.557"/>
+<status status="PASS" starttime="20220213 21:10:28.964" endtime="20220213 21:10:31.914"/>
 </test>
 <test id="s1-t5" name="TC004 Not Input All Field">
 <kw name="Not Input All Field" library="LoginEmail">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/btnSignIn</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:04.563" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
-<status status="PASS" starttime="20220211 14:17:04.559" endtime="20220211 14:17:05.220"/>
+<msg timestamp="20220213 21:10:31.922" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
+<status status="PASS" starttime="20220213 21:10:31.916" endtime="20220213 21:10:32.632"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220211 14:17:05.702" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220211 14:17:05.221" endtime="20220211 14:17:05.702"/>
+<msg timestamp="20220213 21:10:33.078" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220213 21:10:32.632" endtime="20220213 21:10:33.078"/>
 </kw>
-<status status="PASS" starttime="20220211 14:17:04.558" endtime="20220211 14:17:05.703"/>
+<status status="PASS" starttime="20220213 21:10:31.916" endtime="20220213 21:10:33.078"/>
 </kw>
 <doc>Not Input All Field</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:17:04.558" endtime="20220211 14:17:05.704"/>
+<status status="PASS" starttime="20220213 21:10:31.914" endtime="20220213 21:10:33.078"/>
 </test>
 <test id="s1-t6" name="TC005 Input Email with number only">
 <kw name="Generate Random String" library="String">
@@ -250,22 +250,22 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>3</arg>
 <arg>0123456789</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<msg timestamp="20220211 14:17:05.707" level="INFO">${RANDOM_NUMBER} = 922</msg>
-<status status="PASS" starttime="20220211 14:17:05.707" endtime="20220211 14:17:05.707"/>
+<msg timestamp="20220213 21:10:33.080" level="INFO">${RANDOM_NUMBER} = 565</msg>
+<status status="PASS" starttime="20220213 21:10:33.080" endtime="20220213 21:10:33.080"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${input_email_number}</var>
 <arg>923849${RANDOM_NUMBER}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20220211 14:17:05.708" level="INFO">${input_email_number} = 923849922</msg>
-<status status="PASS" starttime="20220211 14:17:05.708" endtime="20220211 14:17:05.708"/>
+<msg timestamp="20220213 21:10:33.081" level="INFO">${input_email_number} = 923849565</msg>
+<status status="PASS" starttime="20220213 21:10:33.081" endtime="20220213 21:10:33.081"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${input_email_number}</var>
 <arg>903294${RANDOM_NUMBER}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20220211 14:17:05.709" level="INFO">${input_email_number} = 903294922</msg>
-<status status="PASS" starttime="20220211 14:17:05.709" endtime="20220211 14:17:05.709"/>
+<msg timestamp="20220213 21:10:33.082" level="INFO">${input_email_number} = 903294565</msg>
+<status status="PASS" starttime="20220213 21:10:33.081" endtime="20220213 21:10:33.082"/>
 </kw>
 <kw name="Input Email with number only" library="LoginEmail">
 <arg>${input_email_number}</arg>
@@ -274,67 +274,67 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <arg>${input_email_number}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:05.713" level="INFO">Typing text '903294922' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:17:05.710" endtime="20220211 14:17:06.812"/>
+<msg timestamp="20220213 21:10:33.085" level="INFO">Typing text '903294565' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:33.083" endtime="20220213 21:10:33.869"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <arg>${real_input_password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:06.821" level="INFO">Typing text 'MisterAladin_2019' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:06.812" endtime="20220211 14:17:07.976"/>
+<msg timestamp="20220213 21:10:33.875" level="INFO">Typing text 'MisterAladin_2019' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:33.869" endtime="20220213 21:10:34.574"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/btnSignIn</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:07.986" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
-<status status="PASS" starttime="20220211 14:17:07.976" endtime="20220211 14:17:08.662"/>
+<msg timestamp="20220213 21:10:34.581" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
+<status status="PASS" starttime="20220213 21:10:34.575" endtime="20220213 21:10:35.831"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220211 14:17:09.104" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220211 14:17:08.663" endtime="20220211 14:17:09.105"/>
+<msg timestamp="20220213 21:10:36.381" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220213 21:10:35.832" endtime="20220213 21:10:36.381"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:09.107" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:17:09.105" endtime="20220211 14:17:09.293"/>
+<msg timestamp="20220213 21:10:36.386" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:36.382" endtime="20220213 21:10:36.531"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:09.301" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:09.295" endtime="20220211 14:17:09.926"/>
+<msg timestamp="20220213 21:10:36.534" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:36.531" endtime="20220213 21:10:37.271"/>
 </kw>
-<status status="PASS" starttime="20220211 14:17:05.710" endtime="20220211 14:17:09.927"/>
+<status status="PASS" starttime="20220213 21:10:33.082" endtime="20220213 21:10:37.272"/>
 </kw>
 <doc>Input Email with number only</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:17:05.706" endtime="20220211 14:17:09.929"/>
+<status status="PASS" starttime="20220213 21:10:33.079" endtime="20220213 21:10:37.273"/>
 </test>
 <test id="s1-t7" name="TC006 Input Email with spesial karakter">
 <kw name="Generate Random String" library="String">
 <var>${RANDOM_NUMBER}</var>
 <arg>3</arg>
-<arg>0123456789</arg>
+<arg>!@$%^&amp;*()_+=-{}|:"&lt;&gt;?</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<msg timestamp="20220211 14:17:09.931" level="INFO">${RANDOM_NUMBER} = 625</msg>
-<status status="PASS" starttime="20220211 14:17:09.931" endtime="20220211 14:17:09.931"/>
+<msg timestamp="20220213 21:10:37.277" level="INFO">${RANDOM_NUMBER} = {{)</msg>
+<status status="PASS" starttime="20220213 21:10:37.276" endtime="20220213 21:10:37.277"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${input_email_spesialkarakter}</var>
-<arg>923849${RANDOM_NUMBER}</arg>
+<arg>@@%^%*^${RANDOM_NUMBER}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20220211 14:17:09.932" level="INFO">${input_email_spesialkarakter} = 923849625</msg>
-<status status="PASS" starttime="20220211 14:17:09.931" endtime="20220211 14:17:09.932"/>
+<msg timestamp="20220213 21:10:37.278" level="INFO">${input_email_spesialkarakter} = @@%^%*^{{)</msg>
+<status status="PASS" starttime="20220213 21:10:37.277" endtime="20220213 21:10:37.278"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${input_email_spesialkarakter}</var>
-<arg>903294${RANDOM_NUMBER}</arg>
+<arg>@@%^%*^${RANDOM_NUMBER}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20220211 14:17:09.932" level="INFO">${input_email_spesialkarakter} = 903294625</msg>
-<status status="PASS" starttime="20220211 14:17:09.932" endtime="20220211 14:17:09.932"/>
+<msg timestamp="20220213 21:10:37.279" level="INFO">${input_email_spesialkarakter} = @@%^%*^{{)</msg>
+<status status="PASS" starttime="20220213 21:10:37.278" endtime="20220213 21:10:37.279"/>
 </kw>
 <kw name="Input Email with spesial karakter" library="LoginEmail">
 <arg>${input_email_spesialkarakter}</arg>
@@ -343,44 +343,44 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <arg>${input_email_spesialkarakter}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:09.936" level="INFO">Typing text '903294625' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:17:09.933" endtime="20220211 14:17:11.094"/>
+<msg timestamp="20220213 21:10:37.282" level="INFO">Typing text '@@%^%*^{{)' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:37.280" endtime="20220213 21:10:38.518"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <arg>${real_input_password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:11.107" level="INFO">Typing text 'MisterAladin_2019' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:11.095" endtime="20220211 14:17:12.251"/>
+<msg timestamp="20220213 21:10:38.527" level="INFO">Typing text 'MisterAladin_2019' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:38.519" endtime="20220213 21:10:39.805"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/btnSignIn</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:12.255" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
-<status status="PASS" starttime="20220211 14:17:12.251" endtime="20220211 14:17:12.938"/>
+<msg timestamp="20220213 21:10:39.811" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
+<status status="PASS" starttime="20220213 21:10:39.805" endtime="20220213 21:10:40.517"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220211 14:17:13.376" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220211 14:17:12.939" endtime="20220211 14:17:13.377"/>
+<msg timestamp="20220213 21:10:40.908" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220213 21:10:40.517" endtime="20220213 21:10:40.908"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:13.382" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:17:13.377" endtime="20220211 14:17:13.612"/>
+<msg timestamp="20220213 21:10:40.912" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:40.909" endtime="20220213 21:10:41.255"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:13.618" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:13.612" endtime="20220211 14:17:14.253"/>
+<msg timestamp="20220213 21:10:41.260" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:41.255" endtime="20220213 21:10:41.950"/>
 </kw>
-<status status="PASS" starttime="20220211 14:17:09.932" endtime="20220211 14:17:14.253"/>
+<status status="PASS" starttime="20220213 21:10:37.279" endtime="20220213 21:10:41.951"/>
 </kw>
 <doc>Input Email with spesial karakter</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:17:09.930" endtime="20220211 14:17:14.255"/>
+<status status="PASS" starttime="20220213 21:10:37.273" endtime="20220213 21:10:41.951"/>
 </test>
 <test id="s1-t8" name="TC007 Input email with invalid data login">
 <kw name="Input email with invalid data login" library="LoginEmail">
@@ -390,92 +390,92 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <arg>${fake_email}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:14.265" level="INFO">Typing text 'andika_prananto@misteraladin.com' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:17:14.258" endtime="20220211 14:17:15.404"/>
+<msg timestamp="20220213 21:10:41.962" level="INFO">Typing text 'andika_prananto@misteraladin.com' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:41.956" endtime="20220213 21:10:43.133"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <arg>${fake_password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:15.410" level="INFO">Typing text 'Misteraladin_2022' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:15.405" endtime="20220211 14:17:16.564"/>
+<msg timestamp="20220213 21:10:43.144" level="INFO">Typing text 'Misteraladin_2022' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:43.133" endtime="20220213 21:10:44.240"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/btnSignIn</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:16.581" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
-<status status="PASS" starttime="20220211 14:17:16.565" endtime="20220211 14:17:17.200"/>
+<msg timestamp="20220213 21:10:44.245" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
+<status status="PASS" starttime="20220213 21:10:44.241" endtime="20220213 21:10:45.019"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220211 14:17:17.612" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220211 14:17:17.201" endtime="20220211 14:17:17.612"/>
+<msg timestamp="20220213 21:10:45.439" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220213 21:10:45.020" endtime="20220213 21:10:45.439"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:17.620" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:17:17.613" endtime="20220211 14:17:18.018"/>
+<msg timestamp="20220213 21:10:45.442" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:45.439" endtime="20220213 21:10:45.950"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:18.022" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:18.018" endtime="20220211 14:17:18.645"/>
+<msg timestamp="20220213 21:10:45.955" level="INFO">Clear text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:45.951" endtime="20220213 21:10:46.655"/>
 </kw>
-<status status="PASS" starttime="20220211 14:17:14.257" endtime="20220211 14:17:18.646"/>
+<status status="PASS" starttime="20220213 21:10:41.954" endtime="20220213 21:10:46.657"/>
 </kw>
 <doc>Input email with invalid data login</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:17:14.255" endtime="20220211 14:17:18.646"/>
+<status status="PASS" starttime="20220213 21:10:41.952" endtime="20220213 21:10:46.657"/>
 </test>
 <test id="s1-t9" name="TC008 Validasi Text In Login Page">
 <kw name="Validasi Text In Login Page" library="LoginEmail">
 <kw name="Should Be String" library="String">
 <arg>Log In</arg>
 <doc>Fails if the given ``item`` is not a string.</doc>
-<status status="PASS" starttime="20220211 14:17:18.649" endtime="20220211 14:17:18.650"/>
+<status status="PASS" starttime="20220213 21:10:46.662" endtime="20220213 21:10:46.664"/>
 </kw>
 <kw name="Should Be String" library="String">
 <arg>E-mail</arg>
 <doc>Fails if the given ``item`` is not a string.</doc>
-<status status="PASS" starttime="20220211 14:17:18.650" endtime="20220211 14:17:18.651"/>
+<status status="PASS" starttime="20220213 21:10:46.665" endtime="20220213 21:10:46.666"/>
 </kw>
 <kw name="Should Be String" library="String">
 <arg>Password</arg>
 <doc>Fails if the given ``item`` is not a string.</doc>
-<status status="PASS" starttime="20220211 14:17:18.652" endtime="20220211 14:17:18.653"/>
+<status status="PASS" starttime="20220213 21:10:46.667" endtime="20220213 21:10:46.668"/>
 </kw>
 <kw name="Should Be String" library="String">
 <arg>Forgot Password</arg>
 <doc>Fails if the given ``item`` is not a string.</doc>
-<status status="PASS" starttime="20220211 14:17:18.654" endtime="20220211 14:17:18.654"/>
+<status status="PASS" starttime="20220213 21:10:46.668" endtime="20220213 21:10:46.668"/>
 </kw>
 <kw name="Should Be String" library="String">
 <arg>Or log in via</arg>
 <doc>Fails if the given ``item`` is not a string.</doc>
-<status status="PASS" starttime="20220211 14:17:18.654" endtime="20220211 14:17:18.655"/>
+<status status="PASS" starttime="20220213 21:10:46.669" endtime="20220213 21:10:46.669"/>
 </kw>
 <kw name="Should Be String" library="String">
 <arg>Don't have an account</arg>
 <doc>Fails if the given ``item`` is not a string.</doc>
-<status status="PASS" starttime="20220211 14:17:18.655" endtime="20220211 14:17:18.655"/>
+<status status="PASS" starttime="20220213 21:10:46.669" endtime="20220213 21:10:46.670"/>
 </kw>
 <kw name="Should Be String" library="String">
 <arg>PHONE NUMBER</arg>
 <doc>Fails if the given ``item`` is not a string.</doc>
-<status status="PASS" starttime="20220211 14:17:18.656" endtime="20220211 14:17:18.657"/>
+<status status="PASS" starttime="20220213 21:10:46.670" endtime="20220213 21:10:46.670"/>
 </kw>
 <kw name="Should Be String" library="String">
 <arg>E-MAIL</arg>
 <doc>Fails if the given ``item`` is not a string.</doc>
-<status status="PASS" starttime="20220211 14:17:18.657" endtime="20220211 14:17:18.658"/>
+<status status="PASS" starttime="20220213 21:10:46.670" endtime="20220213 21:10:46.671"/>
 </kw>
-<status status="PASS" starttime="20220211 14:17:18.648" endtime="20220211 14:17:18.658"/>
+<status status="PASS" starttime="20220213 21:10:46.661" endtime="20220213 21:10:46.671"/>
 </kw>
 <doc>Validasi Page Text</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:17:18.647" endtime="20220211 14:17:18.658"/>
+<status status="PASS" starttime="20220213 21:10:46.658" endtime="20220213 21:10:46.671"/>
 </test>
 <test id="s1-t10" name="TC009 Input Valid Email, Password Login">
 <kw name="Input Valid Email, Password Login" library="LoginEmail">
@@ -485,45 +485,51 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>com.misteraladin.android.stag:id/etEmail</arg>
 <arg>${real_input_email}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:18.665" level="INFO">Typing text 'test.device@misteraladin.com' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
-<status status="PASS" starttime="20220211 14:17:18.660" endtime="20220211 14:17:19.790"/>
+<msg timestamp="20220213 21:10:46.682" level="INFO">Typing text 'test.device@misteraladin.com' into text field 'com.misteraladin.android.stag:id/etEmail'</msg>
+<status status="PASS" starttime="20220213 21:10:46.675" endtime="20220213 21:10:47.781"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/etPassword</arg>
 <arg>${real_input_password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:19.795" level="INFO">Typing text 'MisterAladin_2019' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
-<status status="PASS" starttime="20220211 14:17:19.791" endtime="20220211 14:17:20.923"/>
+<msg timestamp="20220213 21:10:47.788" level="INFO">Typing text 'MisterAladin_2019' into text field 'com.misteraladin.android.stag:id/etPassword'</msg>
+<status status="PASS" starttime="20220213 21:10:47.781" endtime="20220213 21:10:49.035"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>com.misteraladin.android.stag:id/btnSignIn</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220211 14:17:20.928" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
-<status status="PASS" starttime="20220211 14:17:20.924" endtime="20220211 14:17:21.560"/>
+<msg timestamp="20220213 21:10:49.038" level="INFO">Clicking element 'com.misteraladin.android.stag:id/btnSignIn'.</msg>
+<status status="PASS" starttime="20220213 21:10:49.035" endtime="20220213 21:10:49.788"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220211 14:17:21.962" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220211 14:17:21.560" endtime="20220211 14:17:21.962"/>
+<msg timestamp="20220213 21:10:50.193" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220213 21:10:49.788" endtime="20220213 21:10:50.193"/>
 </kw>
-<status status="PASS" starttime="20220211 14:17:18.660" endtime="20220211 14:17:21.963"/>
+<status status="PASS" starttime="20220213 21:10:46.673" endtime="20220213 21:10:50.194"/>
 </kw>
 <doc>Input Valid Email, Password Login</doc>
 <tag>Regression Mobile App</tag>
-<status status="PASS" starttime="20220211 14:17:18.659" endtime="20220211 14:17:21.963"/>
+<status status="PASS" starttime="20220213 21:10:46.672" endtime="20220213 21:10:50.195"/>
+</test>
+<test id="s1-t11" name="python /Users/andikaprananto/TestArchive/test_archiver/output_parser.py --config /Users/andikaprananto/TestArchive/db_conifg.json --dont-require-ssl --team QA_Team --series Jenkins-Build-100 --format robotframework /Users/andikaprananto/PycharmProjects/AladinOtomasi-Master/results/output.xml">
+<status status="FAIL" starttime="20220213 21:10:50.197" endtime="20220213 21:10:50.201">Test case contains no keywords.</status>
+</test>
+<test id="s1-t12" name="python3 /tmp/TestArchiver-master/test_archiver/output_parser.py --config /tmp/TestArchiver-master/db_config.json --dont-require-ssl --team QA_Team --series jenkins_build_no#Jenkins-Build-800 --format robotframework /tmp/RobotDemo-master/output.xml">
+<status status="FAIL" starttime="20220213 21:10:50.202" endtime="20220213 21:10:50.205">Test case contains no keywords.</status>
 </test>
 <doc>Regression Mobile Mister Aladin Login Page</doc>
-<status status="PASS" starttime="20220211 14:16:30.113" endtime="20220211 14:17:21.965"/>
+<status status="FAIL" starttime="20220213 21:10:03.935" endtime="20220213 21:10:50.209"/>
 </suite>
 <statistics>
 <total>
-<stat pass="10" fail="0" skip="0">All Tests</stat>
+<stat pass="10" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="10" fail="0" skip="0">Regression Mobile App</stat>
 </tag>
 <suite>
-<stat pass="10" fail="0" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="10" fail="2" skip="0" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>

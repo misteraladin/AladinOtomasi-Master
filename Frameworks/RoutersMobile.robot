@@ -15,5 +15,6 @@ Resource                Configs.robot
 
 #Resources
 Resource                ../Resources/MOB/Login/LoginEmail.robot
+Resource                ../Resources/MOB/Login/LoginHP.robot
 Resource                ../Resources/Common/MobileSetUp.robot
 

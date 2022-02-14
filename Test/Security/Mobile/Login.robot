@@ -59,9 +59,9 @@ TC005 Input Email with number only
 TC006 Input Email with spesial karakter
     [Documentation]             Input Email with spesial karakter
     [Tags]                      Regression Mobile App
-    ${RANDOM_NUMBER}                        Generate random string      3      0123456789
-    ${input_email_spesialkarakter}          Catenate                    923849${RANDOM_NUMBER}
-    ${input_email_spesialkarakter}          Catenate                    903294${RANDOM_NUMBER}
+    ${RANDOM_NUMBER}                        Generate random string      3      !@$%^&*()_+=-{}|:"<>?
+    ${input_email_spesialkarakter}          Catenate                    @@%^%*^${RANDOM_NUMBER}
+    ${input_email_spesialkarakter}          Catenate                    @@%^%*^${RANDOM_NUMBER}
     LoginEmail.Input Email with spesial karakter    ${input_email_spesialkarakter}       ${real_input_password}
 
 TC007 Input email with invalid data login
